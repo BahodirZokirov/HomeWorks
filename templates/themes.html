@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+    <h1>Lesson contents</h1>
+    <ul>
+        {% for lesson in lesson_table %}
+            <li>
+                {{ lesson }}<br><br>
+            </li>
+        {% endfor %}
+    </ul>
+
+{% endblock content %}

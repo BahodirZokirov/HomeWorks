@@ -1,0 +1,8 @@
+{% extends 'base.html' %}
+{% block content %}
+    {% for grade in grades %}
+        {% for grade_detail in grade %}
+            {{ grade_detail }}<br>
+        {% endfor %}<hr>
+    {% endfor %}
+{% endblock content %}
